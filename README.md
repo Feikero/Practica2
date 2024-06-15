@@ -214,3 +214,9 @@ void loop() {
   }
 }
 ```
+El loop és una funció que s'executa infinitament en bucle, també és la acció principal del programa.
+- Si **'interruptCounter'** es major que 0, significa que com a mínim hi ha hagut una interrupció.
+- Entra a una secció crítica, decrementa 'interruptCounter' y surt de la secció crítica.
+- Incrementa **'totalInterruptCounter'** per portar un registre del número total de interrupcions processades.
+- Dona com a sortida el missatge "An interrupt has occurred. Total number: " seguit del número total de interrupcions processades en el monitor serial.
+  
